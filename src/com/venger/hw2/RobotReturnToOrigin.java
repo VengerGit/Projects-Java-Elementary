@@ -2,7 +2,6 @@ package com.venger.hw2;
 
 /*
 Задана последовательность движений, вернуть true если оне вернется в исходную точку.
-Я не совсем понял, нужно было сразу отправлять Дз со второй ветки?
  */
 
 public class RobotReturnToOrigin {
@@ -12,9 +11,9 @@ public class RobotReturnToOrigin {
         String moves2 = "LL";
         String moves3 = "RRDD";
 
-        judgeCircle(moves1);
-        judgeCircle(moves2);
-        judgeCircle(moves3);
+        System.out.println(judgeCircle(moves1));
+        System.out.println(judgeCircle(moves2));
+        System.out.println(judgeCircle(moves3));
     }
 
     public static boolean judgeCircle(String moves) {
@@ -31,12 +30,6 @@ public class RobotReturnToOrigin {
                 x--;
             }
         }
-        if (x == 0 && y == 0) {
-            System.out.println("true");
-            return true;
-        } else {
-            System.out.println("false");
-            return false;
-        }
+        return x == 0 && y == 0;
     }
 }

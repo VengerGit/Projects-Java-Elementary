@@ -2,7 +2,6 @@ package com.venger.hw2;
 
 /*
 Метод должен вернуть количество драгоценых камней в строке stones.
-Я не совсем понял, нужно было сразу отправлять Дз со второй ветки?
  */
 
 import java.util.HashSet;
@@ -17,8 +16,8 @@ class JewelsAndStones {
         String jewels2 = "z";
         String stones2 = "ZZ";
 
-        numJewelsInStones(jewels1, stones1);
-        numJewelsInStones(jewels2, stones2);
+        System.out.println(numJewelsInStones(jewels1, stones1));
+        System.out.println(numJewelsInStones(jewels2, stones2));
 
     }
 
@@ -33,7 +32,6 @@ class JewelsAndStones {
                 answer++;
             }
         }
-        System.out.println(answer);
         return answer;
     }
 }
