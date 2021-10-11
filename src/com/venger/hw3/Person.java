@@ -24,11 +24,18 @@ public class Person {
         this.patronymic = parsingSnp[2];
     }
 
+    @Override
+    public String toString() {
+        return "Person: " + '\''+
+                "surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'';
+    }
 
     public static void main(String[] args) {
         Person abc = new Person("Иванов Иван Иванович");
-        System.out.printf("%s %s %s\n", abc.name, abc.surname, abc.patronymic);
+        System.out.println(abc);
         Person abc1 = new Person("Venher", "Dmitriy", "Olegovich");
-        System.out.printf("%s %s %s\n", abc1.name, abc1.surname, abc1.patronymic);
+        System.out.println(abc1);
     }
 }
