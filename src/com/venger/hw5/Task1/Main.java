@@ -20,13 +20,10 @@ public class Main {
         Engine sportEngine = new Engine(300, "Ferrari");
         SportCar sportCar = new SportCar("Ferrari", "C", 1_500.00d, sportEngine, sportDriver, 340.50d);
 
-
         System.out.println(car);
         System.out.println("===================");
         System.out.println(lorry);
         System.out.println("===================");
         System.out.println(sportCar);
-
-
     }
 }

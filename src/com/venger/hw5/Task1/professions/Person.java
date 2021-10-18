@@ -9,7 +9,6 @@ public class Person {
         this.fullname = fullname;
     }
 
-
     @Override
     public String toString() {
         return "(" + "fullname:" + fullname + " " + "age:" + age + ')';

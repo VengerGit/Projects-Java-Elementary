@@ -8,7 +8,6 @@ public class Driver extends Person {
         this.drivingExpirience = drivingExpirience;
     }
 
-
     @Override
     public String toString() {
         return "Driver:" + super.toString() +

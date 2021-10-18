@@ -37,6 +37,6 @@ public class Car {
     @Override
     public String toString() {
         return "Car:" + "Marka(" + marka + ")" + "carClass(" + carClass + ')' + "weight:" + weight
-                 + "\n" + driver + "\n" + engine + '.';
+                + "\n" + driver + "\n" + engine + '.';
     }
 }
