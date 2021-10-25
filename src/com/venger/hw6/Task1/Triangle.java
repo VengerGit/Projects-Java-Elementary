@@ -4,7 +4,6 @@ public class Triangle implements GeometricFigure {
     public static final double TRIANGLE = 0.5;
     private double baseTriangle;
     private double heightTriangle;
-    private double areaTriangle;
 
     public Triangle(double baseTriangle, double heightTriangle) {
         this.baseTriangle = baseTriangle;
@@ -13,14 +12,13 @@ public class Triangle implements GeometricFigure {
 
     @Override
     public double figureArea() {
-        areaTriangle = TRIANGLE * baseTriangle * heightTriangle;
-        return areaTriangle;
+        return TRIANGLE * baseTriangle * heightTriangle;
     }
 
     @Override
     public String toString() {
         return "Triangle, " +
-                "areaTriangle = " + areaTriangle +
+                "areaTriangle = " + figureArea() +
                 '.';
     }
 }

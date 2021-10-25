@@ -10,14 +10,13 @@ public class Square implements GeometricFigure {
 
     @Override
     public double figureArea() {
-        areaSquare = sideSquare * sideSquare;
-        return areaSquare;
+        return areaSquare = sideSquare * sideSquare;
     }
 
     @Override
     public String toString() {
         return "Square, " +
-                "areaSquare = " + areaSquare +
+                "areaSquare = " + figureArea() +
                 '.';
     }
 }
