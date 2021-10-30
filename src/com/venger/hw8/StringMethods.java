@@ -28,13 +28,11 @@ public class StringMethods {
     }
 
     public static boolean isPalindrome(String input) {
-        StringBuilder palindrome = new StringBuilder(input);
-        return input.matches(String.valueOf(palindrome.reverse()));
+        return input.matches(String.valueOf(new StringBuilder(input).reverse()));
     }
 
     public static StringBuilder stringReverse(String input) {
-        StringBuilder reverseString = new StringBuilder(input);
-        return reverseString.reverse();
+        return new StringBuilder(input).reverse();
     }
 
     public static int findWordPosition(String source, String target) {
