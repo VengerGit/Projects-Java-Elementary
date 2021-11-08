@@ -1,4 +1,4 @@
-package com.venger.hw9;
+package com.venger.hw10;
 
 public class Main {
     public static void main(String[] args) {
