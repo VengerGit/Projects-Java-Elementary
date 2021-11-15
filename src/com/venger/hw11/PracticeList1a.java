@@ -52,11 +52,9 @@ public class PracticeList1a {
     public List findUnique(List<Integer> input) {
         System.out.println(input);
         List<Integer> unique = new ArrayList<>();
-        for (int i = 0; i < input.size(); i++) {
-            for (int j = i + 1; j < input.size(); j++) {
-                if (input.get(i).equals(input.get(j))) {
-                    unique.add(input.get(i));
-                }
+        for (Integer number : input) {
+            if (!unique.contains(number)) {
+                unique.add(number);
             }
         }
         return unique;

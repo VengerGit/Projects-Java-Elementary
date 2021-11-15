@@ -16,7 +16,7 @@ public class PhoneBook {
 
     public Recording find(String name) {
         for (Recording record : recordings) {
-            if (record.getName().contains(name)) {
+            if (record.getName().equals(name)) {
                 return record;
             }
         }
