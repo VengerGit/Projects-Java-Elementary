@@ -23,7 +23,6 @@ public class Main {
         System.out.println("===========================");
         System.out.println(fileNavigator);
         System.out.println("===========================");
-        System.out.println("Sort By size: ");
-        fileNavigator.sortBySize();
+        System.out.println("Sort By size: " + fileNavigator.sortBySize());
     }
 }

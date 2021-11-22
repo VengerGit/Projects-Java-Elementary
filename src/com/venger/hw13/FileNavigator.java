@@ -33,7 +33,7 @@ public class FileNavigator {
         return listFilesData.remove(pathToFile);
     }
 
-    public void sortBySize() {
+    public List<FileData> sortBySize() {
         List<FileData> fileSortBySize = new ArrayList<>(listFilesData.values());
         Collections.sort(fileSortBySize, new Comparator<FileData>() {
             @Override
@@ -41,9 +41,7 @@ public class FileNavigator {
                 return o1.getSize() - o2.getSize();
             }
         });
-        for (FileData file: fileSortBySize){
-            System.out.println(file.toString());
-        }
+        return fileSortBySize;
     }
 
     @Override
