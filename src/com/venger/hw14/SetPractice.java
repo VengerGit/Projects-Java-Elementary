@@ -10,21 +10,13 @@ public class SetPractice {
     }
 
     public Set<Integer> getSortedUniqueIntegersASC(List<Integer> inputInteger) {
-        Set<Integer> sortedSet = new TreeSet<Integer>(new Comparator<Integer>() {
-            public int compare(Integer o1, Integer o2) {
-                return o1.toString().compareTo(o2.toString());
-            }
-        });
+        Set<Integer> sortedSet = new TreeSet<>(Comparator.naturalOrder());
         sortedSet.addAll(inputInteger);
         return sortedSet;
     }
 
     public Set<Integer> getSortedUniqueIntegersDESC(List<Integer> inputInteger) {
-        Set<Integer> sortedSet = new TreeSet<Integer>(new Comparator<Integer>() {
-            public int compare(Integer o1, Integer o2) {
-                return o2.toString().compareTo(o1.toString());
-            }
-        });
+        Set<Integer> sortedSet = new TreeSet<>(Comparator.reverseOrder());
         sortedSet.addAll(inputInteger);
         return sortedSet;
     }
